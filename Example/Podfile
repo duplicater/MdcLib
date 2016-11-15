@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MdcLib_Example' do
+  pod 'MdcLib', :path => '../'
+
+  target 'MdcLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
