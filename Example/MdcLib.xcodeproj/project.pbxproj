@@ -66,6 +66,9 @@
 		9E9844C71DDC337300C3E496 /* PushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHandler.m; sourceTree = "<group>"; };
 		9E9844C91DDC90C000C3E496 /* MdcLib_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MdcLib_Example.entitlements; sourceTree = "<group>"; };
 		9EEF099D1DDD99EE0028FDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EEF099E1DDDC5860028FDF2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		9EEF099F1DDDC5860028FDF2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EEF09A01DDDC5860028FDF2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A95C41EB0B89530E1A620919 /* MdcLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MdcLib.podspec; path = ../MdcLib.podspec; sourceTree = "<group>"; };
 		DB638DE258BA8AB705427036 /* Pods-MdcLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Tests/Pods-MdcLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC1AB5438A409E419628FB4 /* Pods-MdcLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Example/Pods-MdcLib_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +278,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -436,6 +440,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F597195388D20070C39A /* en */,
+				9EEF099F1DDDC5860028FDF2 /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
+				9EEF09A01DDDC5860028FDF2 /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -452,6 +458,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9EEF099D1DDD99EE0028FDF2 /* Base */,
+				9EEF099E1DDDC5860028FDF2 /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -463,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -503,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
