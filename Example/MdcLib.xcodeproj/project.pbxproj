@@ -22,7 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		64004333EA579F959EFA4217 /* Pods_MdcLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBB845B0BF5202D9E296AD1 /* Pods_MdcLib_Example.framework */; };
 		7124B76586F94C3198631ACF /* Pods_MdcLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9E9844C81DDC337300C3E496 /* PushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9844C71DDC337300C3E496 /* PushHandler.m */; };
+		9EEF09971DDD99C40028FDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF09991DDD99C40028FDF2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		04D26C902EDE029BF7A7D05F /* Pods-MdcLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Example/Pods-MdcLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		09534E1233733C017BB8521B /* Pods-MdcLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Tests/Pods-MdcLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0D5DBC16B901FC9D82DA8BDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0D5DBC16B901FC9D82DA8BDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		0DBB845B0BF5202D9E296AD1 /* Pods_MdcLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MdcLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MdcLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MdcLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,10 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MdcLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98E982ED9B840ADD8124BD1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A95C41EB0B89530E1A620919 /* MdcLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MdcLib.podspec; path = ../MdcLib.podspec; sourceTree = "<group>"; };
+		98E982ED9B840ADD8124BD1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E9844C61DDC337300C3E496 /* PushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHandler.h; sourceTree = "<group>"; };
+		9E9844C71DDC337300C3E496 /* PushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHandler.m; sourceTree = "<group>"; };
+		9E9844C91DDC90C000C3E496 /* MdcLib_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MdcLib_Example.entitlements; sourceTree = "<group>"; };
+		9EEF099D1DDD99EE0028FDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A95C41EB0B89530E1A620919 /* MdcLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MdcLib.podspec; path = ../MdcLib.podspec; sourceTree = "<group>"; };
 		DB638DE258BA8AB705427036 /* Pods-MdcLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Tests/Pods-MdcLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC1AB5438A409E419628FB4 /* Pods-MdcLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MdcLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MdcLib_Example/Pods-MdcLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				9E9844C91DDC90C000C3E496 /* MdcLib_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MdcLib */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -141,9 +146,11 @@
 		6003F593195388D20070C39A /* Example for MdcLib */ = {
 			isa = PBXGroup;
 			children = (
+				9E9844C61DDC337300C3E496 /* PushHandler.h */,
+				9E9844C71DDC337300C3E496 /* PushHandler.m */,
 				6003F59C195388D20070C39A /* MdcLibAppDelegate.h */,
 				6003F59D195388D20070C39A /* MdcLibAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				9EEF09991DDD99C40028FDF2 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MdcLibViewController.h */,
 				6003F5A6195388D20070C39A /* MdcLibViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -247,6 +254,15 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lecuong;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 76X7GRK948;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -276,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				9EEF09971DDD99C40028FDF2 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -392,6 +408,7 @@
 			files = (
 				6003F59E195388D20070C39A /* MdcLibAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MdcLibViewController.m in Sources */,
+				9E9844C81DDC337300C3E496 /* PushHandler.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +446,14 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9EEF09991DDD99C40028FDF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEF099D1DDD99EE0028FDF2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -513,12 +538,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MdcLib_Example.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 76X7GRK948;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MdcLib/MdcLib-Prefix.pch";
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7ae98d02-d660-4c2f-bc28-24b8106ba6ff";
+				PROVISIONING_PROFILE_SPECIFIER = MDCKenh14Profile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -529,12 +560,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MdcLib_Example.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 76X7GRK948;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MdcLib/MdcLib-Prefix.pch";
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7ae98d02-d660-4c2f-bc28-24b8106ba6ff";
+				PROVISIONING_PROFILE_SPECIFIER = MDCKenh14Profile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
