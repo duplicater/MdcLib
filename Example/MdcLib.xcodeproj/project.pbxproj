@@ -22,6 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		64004333EA579F959EFA4217 /* Pods_MdcLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBB845B0BF5202D9E296AD1 /* Pods_MdcLib_Example.framework */; };
 		7124B76586F94C3198631ACF /* Pods_MdcLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */; };
+		9E5EC87A1DF673250063975B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5EC8791DF673250063975B /* LaunchScreen.storyboard */; };
+		9E5EC87C1DF6735E0063975B /* yuna.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E5EC87B1DF6735E0063975B /* yuna.png */; };
 		9E957CB61DF16BFF00BACC0D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E957CB51DF16BFF00BACC0D /* ChatViewController.m */; };
 		9E9844C81DDC337300C3E496 /* PushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9844C71DDC337300C3E496 /* PushHandler.m */; };
 		9EEF09971DDD99C40028FDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF09991DDD99C40028FDF2 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MdcLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E982ED9B840ADD8124BD1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E5EC8791DF673250063975B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E5EC87B1DF6735E0063975B /* yuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuna.png; sourceTree = "<group>"; };
 		9E957CB41DF16BFF00BACC0D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		9E957CB51DF16BFF00BACC0D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		9E9844C61DDC337300C3E496 /* PushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHandler.h; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				9E5EC87B1DF6735E0063975B /* yuna.png */,
 				9E9844C91DDC90C000C3E496 /* MdcLib_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MdcLib */,
@@ -159,6 +164,7 @@
 				9EEF09991DDD99C40028FDF2 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MdcLibViewController.h */,
 				6003F5A6195388D20070C39A /* MdcLibViewController.m */,
+				9E5EC8791DF673250063975B /* LaunchScreen.storyboard */,
 				9E957CB41DF16BFF00BACC0D /* ChatViewController.h */,
 				9E957CB51DF16BFF00BACC0D /* ChatViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -302,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EEF09971DDD99C40028FDF2 /* Main.storyboard in Resources */,
+				9E5EC87C1DF6735E0063975B /* yuna.png in Resources */,
+				9E5EC87A1DF673250063975B /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
