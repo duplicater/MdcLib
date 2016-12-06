@@ -2,7 +2,7 @@ PODS:
   - CCBottomRefreshControl (0.5.1):
     - Masonry (~> 0.6.2)
   - Masonry (0.6.4)
-  - MdcLib (1.0.5):
+  - MdcLib (1.0.6):
     - CCBottomRefreshControl
     - SDWebImage (~> 3.8)
     - UIImageView-Letters
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CCBottomRefreshControl: 57a596348855260f627ffc2b311328ed15b94877
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  MdcLib: c3812df3837af374ffe57446c927cb7138a89da0
+  MdcLib: 40261e057658bd6b950a3ad89f51e5e8f26729fd
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   UIImageView-Letters: f62db28076797adf3560ab7410647dc6899b9eef
 

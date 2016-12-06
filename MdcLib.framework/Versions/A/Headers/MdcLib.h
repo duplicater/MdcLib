@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @discussion
  Useful if you need to proxy MdcLib requests. Defaults to
- https://mdc.vietid.vn.
+ https://mdc.vietid.net.
  */
 @property (nonatomic, copy) NSString *serverURL;
 
