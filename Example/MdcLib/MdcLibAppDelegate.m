@@ -11,7 +11,7 @@
 
 // IMPORTANT!!! replace with your api token from https://mdclib.com/account/
 #define MDCLIB_TOKEN @"c924a224d3a0d199702b48463cc5fea8"
-#define MDCLIB_APPKEY @"cee6812f2e4bb5901c2d8262d0f4d07c"
+#define MDCLIB_APPKEY @"d07d73f7a77f850625c88db00e2da64f"
 
 @interface MdcLibAppDelegate () <MdcLibDelegate>
 
@@ -62,7 +62,7 @@
     }
     
     // Override point for customization after application launch.
-    self.mdcLib.enableRealtime = NO;
+    self.mdcLib.enableRealtime = YES;
     self.mdcLib.checkForSurveysOnActive = YES;
     self.mdcLib.showSurveyOnActive = YES; //Change this to NO to show your surveys manually.
     

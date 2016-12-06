@@ -1,6 +1,6 @@
 {
   "name": "MdcLib",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "summary": "None",
   "description": "The MdcLib iOS SDK, the SDK supports iOS7, iOS 8, iOS 9 and iOS 10",
   "homepage": "https://github.com/duplicater/MdcLib.git",
@@ -12,7 +12,7 @@
     "lecuong": "cuongleviet@vccorp.vn"
   },
   "source": {
-    "http": "https://github.com/duplicater/MdcLib/releases/download/1.0.2/MdcLib.zip"
+    "http": "https://github.com/duplicater/MdcLib/releases/download/1.0.5/MdcLib.zip"
   },
   "frameworks": [
     "UIKit",

@@ -31,7 +31,7 @@
 - (IBAction)setPeopleProperties:(id)sender {
     MdcLib *mdclib = [MdcLib sharedInstance];
     
-    [mdclib registerUser:@"cuonglv2@gmail.com" userId:@"cuonglv2"];
+    [mdclib registerUser:@"sonlm@vccorp.vn" userId:@"sonlm"];
     //[mdclib identify:mdclib.distinctId];
 }
 

@@ -4,6 +4,7 @@
 #import "BaseMessage.h"
 #import "MdcPush.h"
 
+
 #if TARGET_OS_TV
     #define MDCLIB_TVOS_EXTENSION 1
 #endif
@@ -833,6 +834,39 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)joinExperimentsWithCallback:(nullable void (^)())experimentsLoadedCallback;
 
+/**
+ * this method was added by lecuong.
+ * December 2 2016
+ */
+
+
+/**
+ Join to comment in room
+ 
+ @param roomId RoomID
+ @param response  if error = nil, join success.
+ */
+- (void) joinRoom:(NSString *_Nonnull)roomId callback:(void (^ _Nullable)(NSError *_Nullable error))response;
+
+/**
+ Send message in room
+ 
+ @param roomid  RoomId
+ @param content Message content need deliver
+ @param response   if error = nil, send success.
+ */
+- (void)sendChatMessage:(NSString *_Nonnull)roomid content:(NSDictionary *_Nonnull)content callback:(void (^ _Nullable)(NSError *_Nullable error))response;
+
+/**
+ Get history in room
+
+ @param roomId    RoomId
+ @param limit     limit message
+ @param timestamp time begin get
+ @param response  Data response
+ */
+- (void)getHistoryConversation:(NSString *_Nonnull)roomId limited:(NSInteger)limit timestamp:(NSString*)timestamp callback:(void (^ _Nullable)(NSDictionary *_Nullable data))response;
+
 #endif
 
 @end
@@ -875,6 +909,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param mesg          List unread message
  */
 - (void)updateListMesg:(NSArray *)mesg;
+
+- (void)onCommentMesg:(NSDictionary *)mesg;
 
 @end
 

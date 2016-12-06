@@ -2,13 +2,13 @@ PODS:
   - CCBottomRefreshControl (0.5.1):
     - Masonry (~> 0.6.2)
   - Masonry (0.6.4)
-  - MdcLib (1.0.2):
+  - MdcLib (1.0.5):
     - CCBottomRefreshControl
     - SDWebImage (~> 3.8)
     - UIImageView-Letters
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - UIImageView-Letters (1.1.4)
 
 DEPENDENCIES:
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CCBottomRefreshControl: 57a596348855260f627ffc2b311328ed15b94877
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  MdcLib: 98d7e3685fc7e6f655a3a62df08a9c0af9790962
-  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  MdcLib: c3812df3837af374ffe57446c927cb7138a89da0
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   UIImageView-Letters: f62db28076797adf3560ab7410647dc6899b9eef
 
 PODFILE CHECKSUM: 57f9bf518bd665c1253389e9e2575604931e1635

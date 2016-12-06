@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		64004333EA579F959EFA4217 /* Pods_MdcLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBB845B0BF5202D9E296AD1 /* Pods_MdcLib_Example.framework */; };
 		7124B76586F94C3198631ACF /* Pods_MdcLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */; };
+		9E957CB61DF16BFF00BACC0D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E957CB51DF16BFF00BACC0D /* ChatViewController.m */; };
 		9E9844C81DDC337300C3E496 /* PushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9844C71DDC337300C3E496 /* PushHandler.m */; };
 		9EEF09971DDD99C40028FDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF09991DDD99C40028FDF2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		88FCB96E7EFBD76C3F995463 /* Pods_MdcLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MdcLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E982ED9B840ADD8124BD1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E957CB41DF16BFF00BACC0D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		9E957CB51DF16BFF00BACC0D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		9E9844C61DDC337300C3E496 /* PushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHandler.h; sourceTree = "<group>"; };
 		9E9844C71DDC337300C3E496 /* PushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHandler.m; sourceTree = "<group>"; };
 		9E9844C91DDC90C000C3E496 /* MdcLib_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MdcLib_Example.entitlements; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				9EEF09991DDD99C40028FDF2 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MdcLibViewController.h */,
 				6003F5A6195388D20070C39A /* MdcLibViewController.m */,
+				9E957CB41DF16BFF00BACC0D /* ChatViewController.h */,
+				9E957CB51DF16BFF00BACC0D /* ChatViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -259,7 +264,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 76X7GRK948;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -412,6 +417,7 @@
 			files = (
 				6003F59E195388D20070C39A /* MdcLibAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MdcLibViewController.m in Sources */,
+				9E957CB61DF16BFF00BACC0D /* ChatViewController.m in Sources */,
 				9E9844C81DDC337300C3E496 /* PushHandler.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -549,7 +555,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MdcLib_Example.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 76X7GRK948;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MdcLib/MdcLib-Prefix.pch";
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
@@ -557,8 +564,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7ae98d02-d660-4c2f-bc28-24b8106ba6ff";
-				PROVISIONING_PROFILE_SPECIFIER = MDCKenh14Profile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -571,7 +578,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MdcLib_Example.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 76X7GRK948;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MdcLib/MdcLib-Prefix.pch";
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
@@ -579,8 +587,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7ae98d02-d660-4c2f-bc28-24b8106ba6ff";
-				PROVISIONING_PROFILE_SPECIFIER = MDCKenh14Profile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
