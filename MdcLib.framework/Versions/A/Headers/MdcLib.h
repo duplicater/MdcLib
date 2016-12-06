@@ -855,7 +855,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param content Message content need deliver
  @param response   if error = nil, send success.
  */
-- (void)sendChatMessage:(NSString *_Nonnull)roomid content:(NSDictionary *_Nonnull)content callback:(void (^ _Nullable)(NSError *_Nullable error))response;
+- (void)sendChatMessage:(NSString *_Nonnull)roomid rootId:(NSString *_Nullable)rootId content:(NSDictionary *_Nonnull)content callback:(void (^ _Nullable)(NSError *_Nullable error))response;
 
 /**
  Get history in room

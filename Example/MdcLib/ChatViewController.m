@@ -87,7 +87,7 @@
 - (IBAction)sendBtnClicked:(id)sender {
     NSDictionary *chatDist = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.chatField.text, nil] forKeys:[NSArray arrayWithObjects:@"me", nil]];
     
-    [[MdcLib sharedInstance] sendChatMessage:currentRoomId content:chatDist callback:^(NSError * _Nullable error) {
+    [[MdcLib sharedInstance] sendChatMessage:currentRoomId rootId:@"" content:chatDist callback:^(NSError * _Nullable error) {
         //
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error){
