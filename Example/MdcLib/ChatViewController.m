@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *messageView;
 
 @property (nonatomic, strong) NSMutableArray *dataMesg;
+- (IBAction)leaveRoom:(id)sender;
 
 @end
 
@@ -36,6 +37,12 @@
     self.dataMesg = [NSMutableArray array];
 
     [MdcLib sharedInstance].delegate = self;
+    
+    
+    [[MdcLib sharedInstance] getHistoryConversation:@"100645" limited:20 timestamp:@"1481272710000" callback:^(NSDictionary * _Nullable data) {
+        //
+        NSLog(@"history %@",data);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,18 +83,19 @@
                 } else {
                     self.FBIwarningView.text = [NSString stringWithFormat:@"joinRoom %@ success",roomid ];
                     NSLog(@"connectBtnClicked %@", @"ok");
-
                 }
             });
             
         }];
     }
     
+    [self.view endEditing:YES];
+    
 }
 - (IBAction)sendBtnClicked:(id)sender {
-    NSDictionary *chatDist = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.chatField.text, nil] forKeys:[NSArray arrayWithObjects:@"me", nil]];
+    NSDictionary *chatDist = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.chatField.text, @"sdfsa123123", @"sdffsdv", @"vxc  54t5", nil] forKeys:[NSArray arrayWithObjects:@"typeComment", @"userAvatar", @"userName", @"valueComment", nil]];
     
-    [[MdcLib sharedInstance] sendChatMessage:currentRoomId rootId:@"" content:chatDist callback:^(NSError * _Nullable error) {
+    [[MdcLib sharedInstance] sendChatMessage:currentRoomId type:@"message" mesg_root_id:@"" content:chatDist callback:^(NSError * _Nullable error) {
         //
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error){
@@ -100,7 +108,7 @@
         });
     }];
     
-    
+    [self.view endEditing:YES];
 }
 
 #pragma mark- delegate
@@ -112,6 +120,19 @@
     //?
     
     self.messageView.text = [NSString stringWithFormat:@"%@\n",mesg ];
+    
+    NSDictionary *messContent = [mesg objectForKey:@"message"];
+    
+    NSString *conten = [messContent objectForKey:@"content"];
+    NSData* jsonData = [conten dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *jsonError = nil;
+    NSDictionary* contentJSON = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&jsonError];
+    if (jsonError) {
+        return;
+    }
+    NSString *userAvatar = [contentJSON objectForKey:@"userAvatar"];
+    
+    NSLog(@"%@", userAvatar);
 }
 
 - (void)updateListMesg:(NSArray *)mesg{
@@ -121,8 +142,32 @@
     self.messageView.text = [NSString stringWithFormat:@"%@\n",mesg ];
 }
 
+- (IBAction)leaveRoom:(id)sender {
+    
+    [[MdcLib sharedInstance] leaveRoom:@"100645" callback:^(NSError * _Nullable error) {
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //
+            if (error){
+                self.FBIwarningView.text = [NSString stringWithFormat:@"Error :%@",error.localizedDescription];
+                NSLog(@"connectBtnClicked %@", error.localizedDescription);
+            } else {
+                self.FBIwarningView.text = [NSString stringWithFormat:@"leave Room %@ success",@"100645" ];
+                NSLog(@"connectBtnClicked %@", @"ok");
+                
+            }
+        });
+        
+    }];
+}
 
+- (void)onConnected{
+     NSLog(@"on Connected %@", @"ok");
+}
 
+- (void)disConnected{
+     NSLog(@"on disConnected");
+}
 
 
 @end

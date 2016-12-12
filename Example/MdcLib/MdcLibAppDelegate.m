@@ -106,6 +106,9 @@
     NSLog(@"%@", mesg);
 }
 
+- (void)onConnected{
+    NSLog(@"on Connected %@", @"ok");
+}
 
 
 @end

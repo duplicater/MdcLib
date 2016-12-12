@@ -848,6 +848,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void) joinRoom:(NSString *_Nonnull)roomId callback:(void (^ _Nullable)(NSError *_Nullable error))response;
 
+
+/**
+ leave room, don'n listen mesg in room
+
+ @param roomId Room id
+ @param response if error = nil, leave success.
+ */
+- (void) leaveRoom:(NSString *_Nonnull)roomId callback:(void (^_Nullable)(NSError *_Nullable error))response;
+
 /**
  Send message in room
  
@@ -855,7 +864,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param content Message content need deliver
  @param response   if error = nil, send success.
  */
-- (void)sendChatMessage:(NSString *_Nonnull)roomid rootId:(NSString *_Nullable)rootId content:(NSDictionary *_Nonnull)content callback:(void (^ _Nullable)(NSError *_Nullable error))response;
+- (void)sendChatMessage:(NSString *_Nonnull)roomid type:(NSString *_Nullable)type mesg_root_id:(NSString*)rootId content:(NSDictionary *_Nonnull)content callback:(void (^ _Nullable)(NSError *_Nullable error))response;
 
 /**
  Get history in room
@@ -866,6 +875,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param response  Data response
  */
 - (void)getHistoryConversation:(NSString *_Nonnull)roomId limited:(NSInteger)limit timestamp:(NSString*)timestamp callback:(void (^ _Nullable)(NSDictionary *_Nullable data))response;
+
+- (void)connectRealTime;
 
 #endif
 
@@ -911,6 +922,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateListMesg:(NSArray *)mesg;
 
 - (void)onCommentMesg:(NSDictionary *)mesg;
+
+- (void)onConnected;
+
+- (void)disConnected;
 
 @end
 

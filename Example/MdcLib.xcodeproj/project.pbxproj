@@ -568,7 +568,7 @@
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdctestOpensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -589,7 +589,7 @@
 				INFOPLIST_FILE = "MdcLib/MdcLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdckenh14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcc.mdctestOpensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
