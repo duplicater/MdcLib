@@ -183,4 +183,9 @@
     completionHandler();
 }
 
+- (void)onRegisterNotificationToken:(NSString *)deviceToken{
+    //
+    
+}
+
 @end

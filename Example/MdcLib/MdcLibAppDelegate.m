@@ -10,8 +10,8 @@
 #import "PushHandler.h"
 
 // IMPORTANT!!! replace with your api token from https://mdclib.com/account/
-#define MDCLIB_TOKEN @"c924a224d3a0d199702b48463cc5fea8"
-#define MDCLIB_APPKEY @"d07d73f7a77f850625c88db00e2da64f"
+#define MDCLIB_TOKEN @"aff0466c0b9626ba3bc0deac36b01cf8"
+#define MDCLIB_APPKEY @"53c213ccca20bce2d7d65c6167d0b1a6"
 
 @interface MdcLibAppDelegate () <MdcLibDelegate>
 

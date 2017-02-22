@@ -124,6 +124,9 @@ NS_ASSUME_NONNULL_BEGIN
                       actionIdentifier:(NSString *)identifier
                      completionHandler:(void (^)())completionHandler;
 
+
+- (void)onRegisterNotificationToken:(NSString *)deviceToken;
+
 @end
 
 //---------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MdcLib'
-  s.version          = '1.1.4'
+  s.version          = '2.0.5'
   s.summary          = 'None'
 
   s.description      = "The MdcLib iOS SDK, the SDK supports iOS7, iOS 8, iOS 9 and iOS 10"
@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
   s.libraries = 'icucore'
   s.dependency 'SDWebImage', '~>3.8'
   s.dependency 'UIImageView-Letters'
-  s.dependency 'CCBottomRefreshControl'
+  s.dependency 'CCBottomRefreshControl', '~>0.5.1'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.requires_arc        = true
   s.source              = { :http => "https://github.com/duplicater/MdcLib/releases/download/#{s.version}/MdcLib.zip" }
-  s.platform            = :ios, '8.0'
+  s.platform            = :ios, '7.0'
   s.preserve_paths      = 'MdcLib.framework'
   s.public_header_files = 'MdcLib.framework/Versions/A/Headers/*'
   s.source_files        = 'MdcLib.framework/Versions/A/Headers/*'

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5aq-Jr-q5f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5aq-Jr-q5f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,15 +24,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-Dd-eMQ">
-                                <rect key="frame" x="147" y="274" width="81" height="30"/>
-                                <state key="normal" title="Track Event"/>
+                                <rect key="frame" x="170.5" y="274" width="34" height="30"/>
+                                <state key="normal" title="login"/>
                                 <connections>
                                     <action selector="setPeopleProperties:" destination="7Sb-Gf-lA6" eventType="touchUpInside" id="PQW-hT-2Yy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8C-cI-9nQ">
-                                <rect key="frame" x="113" y="304" width="149" height="30"/>
-                                <state key="normal" title="Set people properties"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8C-cI-9nQ" userLabel="logout">
+                                <rect key="frame" x="165.5" y="304" width="44" height="30"/>
+                                <state key="normal" title="logout"/>
                                 <connections>
                                     <action selector="trackEvent:" destination="7Sb-Gf-lA6" eventType="touchUpInside" id="b6H-bt-t5o"/>
                                 </connections>
@@ -48,18 +48,40 @@
                                     <segue destination="FOS-01-6p2" kind="push" id="tAf-6B-aKx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vm1-is-Qq5" userLabel="acc">
+                                <rect key="frame" x="25" y="94" width="325" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86F-9h-9qw" userLabel="pass">
+                                <rect key="frame" x="25" y="144" width="325" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E8C-cI-9nQ" firstAttribute="centerX" secondItem="WeY-td-1Vn" secondAttribute="centerX" id="5bg-60-01i"/>
+                            <constraint firstItem="Vm1-is-Qq5" firstAttribute="centerX" secondItem="WeY-td-1Vn" secondAttribute="centerX" id="DO4-d4-c7p"/>
                             <constraint firstItem="jZZ-Dd-eMQ" firstAttribute="top" secondItem="amY-lM-2nx" secondAttribute="bottom" constant="210" id="JgC-6S-iJp"/>
+                            <constraint firstItem="86F-9h-9qw" firstAttribute="width" secondItem="WeY-td-1Vn" secondAttribute="width" constant="-50" id="OgG-bX-xrg"/>
                             <constraint firstItem="Aja-3w-CpB" firstAttribute="centerY" secondItem="WeY-td-1Vn" secondAttribute="centerY" multiplier="3/2" id="XPu-ec-lKU"/>
+                            <constraint firstItem="86F-9h-9qw" firstAttribute="centerX" secondItem="WeY-td-1Vn" secondAttribute="centerX" id="YEb-Yg-NH2"/>
+                            <constraint firstItem="Vm1-is-Qq5" firstAttribute="width" secondItem="WeY-td-1Vn" secondAttribute="width" constant="-50" id="p3h-eZ-8EG"/>
+                            <constraint firstItem="Vm1-is-Qq5" firstAttribute="top" secondItem="amY-lM-2nx" secondAttribute="bottom" constant="30" id="paF-8G-AXe"/>
                             <constraint firstItem="Aja-3w-CpB" firstAttribute="centerX" secondItem="WeY-td-1Vn" secondAttribute="centerX" id="tYy-74-syh"/>
                             <constraint firstItem="jZZ-Dd-eMQ" firstAttribute="centerX" secondItem="WeY-td-1Vn" secondAttribute="centerX" id="u9a-iv-pqh"/>
+                            <constraint firstItem="86F-9h-9qw" firstAttribute="top" secondItem="amY-lM-2nx" secondAttribute="bottom" constant="80" id="yA7-Tl-SYc"/>
                             <constraint firstItem="E8C-cI-9nQ" firstAttribute="top" secondItem="jZZ-Dd-eMQ" secondAttribute="bottom" id="yZx-cu-YIX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fdo-2k-ch1"/>
+                    <connections>
+                        <outlet property="accfield" destination="Vm1-is-Qq5" id="LsZ-q5-koR"/>
+                        <outlet property="passfield" destination="86F-9h-9qw" id="jIO-HM-hEB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1A-Wl-lCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
