@@ -40,7 +40,8 @@
 - (IBAction)setPeopleProperties:(id)sender {
     MdcLib *mdclib = [MdcLib sharedInstance];
     [mdclib identify:mdclib.distinctId];
-    [mdclib registerUser:self.accfield.text userId:self.passfield.text];
+    //[mdclib registerUser:self.accfield.text userId:self.passfield.text];
+    [mdclib registerUser:@"lecuongxxx@gmail.com" userId:@"ahihi"];
     [mdclib track:@"Button Clicked" properties:@{@"btname": @"track"}];
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MdcLib'
-  s.version          = '2.0.5'
+  s.version          = '2.1.3'
   s.summary          = 'None'
 
   s.description      = "The MdcLib iOS SDK, the SDK supports iOS7, iOS 8, iOS 9 and iOS 10"

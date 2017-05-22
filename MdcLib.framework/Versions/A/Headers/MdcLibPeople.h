@@ -56,6 +56,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (atomic) BOOL ignoreTime;
 
+//lecuong add device token
+
+
+/**
+ @property
+ devicetoke dung de push notification
+ */
+@property (nonatomic, strong) NSString *deviceToken;
+
 /*!
  @method
  

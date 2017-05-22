@@ -7,8 +7,8 @@
 //
 
 #import "ChatViewController.h"
-
 #import <MdcLib/MdcLib.h>
+#import "AFNetworking.h"
 
 @interface ChatViewController ()<MdcLibDelegate>
 - (IBAction)backBtnClicked:(id)sender;
@@ -36,18 +36,39 @@
     // Do any additional setup after loading the view.
     self.dataMesg = [NSMutableArray array];
 
-    [MdcLib sharedInstance].delegate = self;
-    
-    
+    /*
     [[MdcLib sharedInstance] getHistoryConversation:@"100645" limited:20 timestamp:@"1481272710000" callback:^(NSDictionary * _Nullable data) {
         //
         NSLog(@"history %@",data);
+    }];*/
+    
+    NSDictionary* parameters = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"", @"5825780b465d544b1488171071925", @"a8a33cf4a4a6f1985d5ed8c09becee43", @"711", nil] forKeys:[NSArray arrayWithObjects:@"token", @"checksum", @"app_id", @"post_id", nil]];
+    
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [manager POST:@"http://comment.vietidv2.net/apiv1/getDataComment" parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        //
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+        NSLog(@"respose: %@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+        NSLog(@"error: %@",error.description);
     }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [MdcLib sharedInstance].delegate = self;
+    [self connectBtnClicked:self.connectBtn];
 }
 
 /*
@@ -65,15 +86,15 @@
     
 }
 - (IBAction)connectBtnClicked:(id)sender {
-    NSString *roomid = self.roomConnect.text;
+    /*NSString *roomid = self.roomConnect.text;
     currentRoomId = roomid;
     
     if ((roomid == nil) || ([roomid isEqualToString:@""])){
         self.FBIwarningView.text = @"Room ID invalid";
     }
-    else {
+    else {*/
 
-        [[MdcLib sharedInstance] joinRoom:roomid callback:^(NSError * _Nullable error) {
+        [[MdcLib sharedInstance] joinRoom:@"192967" callback:^(NSError * _Nullable error) {
             //
             dispatch_async(dispatch_get_main_queue(), ^{
                 //
@@ -81,13 +102,13 @@
                     self.FBIwarningView.text = [NSString stringWithFormat:@"Error :%@",error.localizedDescription];
                     NSLog(@"connectBtnClicked %@", error.localizedDescription);
                 } else {
-                    self.FBIwarningView.text = [NSString stringWithFormat:@"joinRoom %@ success",roomid ];
+                    self.FBIwarningView.text = [NSString stringWithFormat:@"joinRoom %@ success",@"192967" ];
                     NSLog(@"connectBtnClicked %@", @"ok");
                 }
             });
             
         }];
-    }
+    //}
     
     [self.view endEditing:YES];
     
@@ -95,7 +116,7 @@
 - (IBAction)sendBtnClicked:(id)sender {
     NSDictionary *chatDist = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.chatField.text, @"sdfsa123123", @"sdffsdv", @"vxc  54t5", nil] forKeys:[NSArray arrayWithObjects:@"typeComment", @"userAvatar", @"userName", @"valueComment", nil]];
     
-    [[MdcLib sharedInstance] sendChatMessage:currentRoomId type:@"message" mesg_root_id:@"" content:chatDist callback:^(NSError * _Nullable error) {
+    [[MdcLib sharedInstance] sendChatMessage:@"192967" type:@"message" mesg_root_id:@"" content:chatDist callback:^(NSError * _Nullable error) {
         //
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error){
@@ -120,7 +141,7 @@
     //?
     
     self.messageView.text = [NSString stringWithFormat:@"%@\n",mesg ];
-    
+    /*∂∂
     NSDictionary *messContent = [mesg objectForKey:@"message"];
     
     NSString *conten = [messContent objectForKey:@"content"];
@@ -132,7 +153,7 @@
     }
     NSString *userAvatar = [contentJSON objectForKey:@"userAvatar"];
     
-    NSLog(@"%@", userAvatar);
+    NSLog(@"%@", userAvatar);*/
 }
 
 - (void)updateListMesg:(NSArray *)mesg{
@@ -143,7 +164,7 @@
 }
 
 - (IBAction)leaveRoom:(id)sender {
-    
+    /*
     [[MdcLib sharedInstance] leaveRoom:@"100645" callback:^(NSError * _Nullable error) {
         //
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -158,6 +179,24 @@
             }
         });
         
+    }];*/
+    
+    
+    NSDictionary* parameters = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"elXbmvZuEH", @"5825780b465d544b1488171071925", @"a8a33cf4a4a6f1985d5ed8c09becee43", @"711", nil] forKeys:[NSArray arrayWithObjects:@"token", @"checksum", @"app_id", @"post_id", nil]];
+    
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [manager POST:@"http://comment.vietidv2.net/apiv1/getDataComment" parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        //
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+        NSLog(@"respose: %@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+        NSLog(@"error: %@",error.description);
     }];
 }
 

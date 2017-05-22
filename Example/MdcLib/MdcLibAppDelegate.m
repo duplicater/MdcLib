@@ -77,6 +77,12 @@
     
     // Set the icon badge to zero on startup (optional)
     [[MdcLib push] resetBadge];
+    
+    //[self.mdcLib identify:self.mdcLib.distinctId];
+    
+    //[self.mdcLib registerUser:@"lecuongxxx@gmail.com" userId:@"ahihi"];
+    //[self.mdcLib track:@"Button Clicked" properties:@{@"btname": @"track"}];
+    
     return YES;
 }
 

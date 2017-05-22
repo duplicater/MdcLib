@@ -185,7 +185,7 @@
 
 - (void)onRegisterNotificationToken:(NSString *)deviceToken{
     //
-    
+    NSLog(@"device tocken:%@",deviceToken);
 }
 
 @end

@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target 'MdcLib_Example' do
   pod 'MdcLib', :path => '../'
+  pod 'AFNetworking'
 
   target 'MdcLib_Tests' do
     inherit! :search_paths
